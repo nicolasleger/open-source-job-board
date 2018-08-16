@@ -11,6 +11,10 @@ env:
 services:
   - postgresql
 addons:
-  postgresql: 10
+  postgresql: "10"
+  apt:
+    packages:
+    - postgresql-10
+    - postgresql-client-10
 before_script:
   - RAILS_ENV=test bundle exec rake db:migrate
