@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 ruby '>= 2.0.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.4'
+gem 'rails', '~> 4.1'
 gem 'rails_admin'
 gem 'rails_12factor', group: :production
 gem 'pg'
@@ -36,6 +36,7 @@ group :development do
   gem 'binding_of_caller'
   gem 'pry-rails'
   gem 'better_errors'
+  gem 'web-console', '~> 2.0'
 end
 
 group :development, :test do
